@@ -1,88 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
+    <head>
+        <title>Reservia</title>
+        <meta charset="utf-8">
+        <!--Réfère au fichier CSS-->
+        <link rel="stylesheet" href="StyleCode.css">
+        <!-- Réfère à google font, valable tout type de navigateur-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+      </head>
+      
+      <body>
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre-ville ou en pleine nature</p>
+    </head>
 
-<head>
-  <title>Reservia</title>
-  <meta charset="utf-8">
-  <!--Réfère au fichier CSS-->
-  <link rel="stylesheet" href="TestBoxcss.css">
-  <!-- Réfère à google font, valable tout type de navigateur-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-</head>
+    <body>
 
-<body>
-  <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre-ville ou en pleine nature</p>
+        <form role="search">
+            <div>
+              <input type="search" id="maRecherche" name="q" placeholder="Rechercher sur le site…"
+                aria-label="Rechercher parmi le contenu du site">
+              <button>Rechercher</button>
+            </div>
+        </form>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
-    <img src="annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt"annie">
+    <div class = "box2">    
+        <div class="div3">
+            <h2 class="bold">Hébergement à Marseille</h2>
+                <p>
+                    <img src="Images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt"annie">
 
-  <!--barre de recherche-->
-  <form role="search">
-    <div>
-      <input type="search" id="maRecherche" name="q" placeholder="Rechercher sur le site…"
-        aria-label="Rechercher parmi le contenu du site">
-      <button>Rechercher</button>
+                </p>
+        </div>
+        <div class = "div4">
+            <h2 class="bold">Les plus populaires</h2>
+        </div>
     </div>
-  </form>
+            <h2 class="bold">Activités à Marseille</h2>
 
-  <h2>Hébergement à Marseille</h2>
-  <h2>Les plus populaires</h2>
-  <h2>Activités à Marseille</h2>
-<!--
-  <h3>A propos</h3>
-  <p><a href="">Fonctionnement du site</a></p>
-  <p><a href="">Conditions générales de vente</a></p>
-  <p><a href="">Données et confidentialité</a></p>
+    <div class ="box">
+        <div class="div1">A propos :
+            <p><a href = "">Fonctionnement du site</a></p>
+            <p><a href = "">Conditions générales du site</a></p>
+            <p><a href = "">Données et confidentialité</a></p>
+     
+        </div>
 
-  <h3>Nos hébergements</h3>
-  <p><a href="">Charte qualité</a></p>
-  <p><a href="">Soumettre votre hôtel</a></p>
+        <div class="div2">Nos hébergements :
+            <p><a href = "">Charte qualité</a></p>
+            <p><a href ="">Soumettre votre hôtel</a></p>
+        </div>
 
-  <h3>Assistance</h3>
-  <p><a href="">Centre d'aide</a></p>
-  <p><a href="">Nous contacter</a></p>
--->
-
-  <!--
-  <div class="box">
-    <div class="box2">A propos
-      <p><a href="">Fonctionnement du site</a></p>
-      <p><a href="">Conditions générales du site</a></p>
-      <p><a href="">Données et confidentialité</a></p>
-    </div>
-    <div class="box3">Nos hébergements
-      <p><a href="">Charte qualité</a></p>
-      <p><a href="">Soumettre votre hôtel</a></p>
-    </div>
-    <div class="box4">Assistance
-      <p><a href="">Centre d'aides</a></p>
-      <p><a href="">Nous contacter</a></p>
-    </div>
-  </div>
--->
-
-    <div class="div1">A propos :
-      <p>Fonctionnement du site</p>
-      <p>Conditions générales du site</p>
+        <div class="div1">Assistance
+            <p><a href = "">Centre d'aide</a></p>
+            <p><a href = "">Nous contacter</a></p>
+        </div>
     </div>
 
-    <div class="div2">Nos hébergements :
-      <p>Charte qualité</p>
-      <p>Soumettre votre hôtel</p>
-    </div>
-
-<!--TO DO
-  Créer site full resonsive :
-    -quand la page devient inférieur a une certaine taille les éléments alignés d'une boite deviennent placés en colonnes
-  -logo reservia haut de page
-  -les boites "hébergement" et "les plus populaires" doivent être alignées
-  -intégrer les images dans des petites cases avec nom, prix et note 
-  -cases cliquables, lien vide
-  -vérifier le html avec outil w3c (lien sur OC)
-  Probleme : le texte de toutes les div sont en gras Solution : créer p id="bold" ?
--->
-
-</body>
-
+    </body>
+    
 </html>
