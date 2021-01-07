@@ -4,7 +4,7 @@
         <title>Reservia</title>
         <meta charset="utf-8">
         <!--Réfère au fichier CSS-->
-        <link rel="stylesheet" href="TestBoxcss.css">
+        <link rel="stylesheet" href="StyleIndex.css">
         <!-- Réfère à google font, valable tout type de navigateur-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -16,19 +16,20 @@
 
       <header id ="Header">
         <div id="boxHeader">
-            <img  id="logo" src="Reservia@3x.png">
+            <img  id="logo" src="Elements/Reservia@3x.png">
 
-                <p id="hébergement"><a href="#ancre1">Hébergement</a></p>
-                <p id="Activités"><a href="#ancreA">Activités</a></p>
+                <p id="hébergement"><a class="ancre" href="#ancreH">Hébergement</a></p>
+                <p id="Activités"><a class="ancre" href="#ancreA">Activités</a></p>
                 <p id="Sinscrire">S'inscrire</p>
 
         </div>
       </header>
-
       
+    <div class="Partie1">
+
         <h1 class="debug">Trouver votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre-ville ou en pleine nature</p>
-    </head>
+
 
     <body class="debug">
 
@@ -85,11 +86,11 @@
 
 
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
-
+    </div>
     <div class = "box2">    
         <div class="Heber">
-            <h2 class="bold" id="ancre1">Hébergement à Marseille</h2>
-                <!--Case image1-->
+            <h2 class="bold" id="ancreH">Hébergement à Marseille</h2>
+
                 <div class="BoiteArrondie" id="BA1">
                     <a href ="">
                         <img class="image" src="Elements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt"annie">
@@ -104,7 +105,7 @@
                         </p>
                     </a>
                 </div>
-                <!--Case image2-->
+
                 <div class="BoiteArrondie" id="BA2">
                     <a href ="">
                         <img class="image" src="Elements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt"annie">
@@ -115,7 +116,7 @@
                         </p>
                     </a>
                 </div>
-                <!--Case image3-->
+
                 <div class="BoiteArrondie" id="BA3">
                     <a href ="">
                         <img class="image" src="Elements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt"annie">
@@ -127,7 +128,7 @@
                     </a>
                 </div>
                 
-                <!--Case image4-->
+
                 <div class="BoiteArrondie" id="BA3">
                     <a href ="">
                         <img class="image" src="Elements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt"annie">
@@ -138,7 +139,7 @@
                         </p>
                     </a>
                 </div>   
-                <!--Case image5-->
+
                 <div class="BoiteArrondie" id="BA2">
                     <a href ="">
                         <img class="image" src="Elements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt"annie">
@@ -149,7 +150,7 @@
                         </p>
                     </a>
                 </div>
-                <!--Case image6-->
+
                 <div class="BoiteArrondie" id="BA2">
                     <a href ="">
                         <img class="image" src="Elements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt"annie">
@@ -165,7 +166,7 @@
     
         <div class = "LesPlus">
             <h2 class="bold">Les plus populaires</h2><i class="fas fa-chart-line fa-lg"></i>
-                <!--Case image7-->
+
                 <div class="BoiteArrondieLesPlus">
                     <a href ="">
                         <img class="imageLesPlus" src="Elements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt"annie">
@@ -176,7 +177,7 @@
                         </p>
                     </a>
                 </div>
-                <!--Case image8-->
+
                 <div class="BoiteArrondieLesPlus">
                     <a href ="">
                         <img class="imageLesPlus" src="Elements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt"annie">
@@ -187,7 +188,7 @@
                         </p>
                     </a>
                 </div>
-                <!--Case image9-->
+
                 <div class="BoiteArrondieLesPlus">
                     <a href ="">
                         <img class="imageLesPlus" src="Elements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt"annie">
@@ -201,12 +202,35 @@
 <!--img:aw creative, emile guillemot, zakaria sjv-->            
         </div>
     </div>
+
+    <div class="Partie3">
         <h2 class="bold" id="ancreA">Activités à Marseille</h2>
-            <div>
-                <img src="Elements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt"act">
+        <div id="BoiteImgAct">
+                <div class="divImageAct">
+                    <img class= "imageAct" src="Elements/ActiviteImg/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt"act">
+                    Vieux Port
+                </div>
+                <div class="divImageAct2">
+                    <img class= "imageAct2" src="Elements/ActiviteImg/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt"act">
+                    Fort de Pomègue
+
+                    <img class= "imageAct2" src="Elements/ActiviteImg/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt"act">
+                    Iles de Frioul
+                </div>
+                <div class="divImageAct">
+                    <img class= "imageAct" src="Elements/ActiviteImg/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt"act">
+                    Parc National des Calanques
+                </div>
+                <div class="divImageAct2">
+                    <img class= "imageAct2" src="Elements/ActiviteImg/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt"act">
+                    Notre-Dame-De-La-Garde
+
+                    <img class= "imageAct2" src="Elements/ActiviteImg/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt"act">
+                    Parc Longchamps
+                </div>
+
             </div>
-
-
+        </div>
 
 
         <div class ="info">
@@ -227,7 +251,7 @@
                 <p><a href = "">Nous contacter</a></p>
             </div>
         </div>
-
+    </div>
     </body>
     
 <!--To do :
