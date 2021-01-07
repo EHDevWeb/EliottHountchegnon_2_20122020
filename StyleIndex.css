@@ -1,0 +1,299 @@
+
+#Header{
+    max-width:60%;
+}
+
+#boxHeader{
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+}
+
+
+#hébergement, #Activités, #Sinscrire{
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+}
+
+#hébergement{
+    border: cornsilk;
+    width: auto;
+    height: auto;
+    margin-right:1%;
+}
+
+#Activités{
+    border: cornsilk;
+    width: auto;
+    height: auto;
+    margin-right:1%;
+}
+
+#Sinscrire{
+    border: cornsilk;
+    width: auto;
+    height: auto;
+    color:rgb(53, 94, 207)
+}
+
+#SearchB{
+    border : 1px solid black;
+    width:300px;
+    height:50px;
+    justify-items: center;
+}
+
+#I1,#I2,#I3{
+    display:inline-block;
+    width: 30%;
+}
+
+
+
+.bold{
+    font-weight: bold;
+}
+
+.info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #AAA;
+    clear:left;
+}
+
+#ancreA{
+    clear:left;
+}
+
+.image{
+    width:100%;
+    max-height:200px;
+
+    border-radius: 10px;
+}
+
+.box2{
+    width:100%;
+    height:800px;
+    border: 1px solid black;
+}
+
+.Heber{
+    width: 65%;
+    height:100%;
+    background-color: rgb(204, 204, 204);
+    padding: 0%;
+    float:left;
+    border: 1px solid black;
+}
+
+
+/*
+.Heber, .div4{
+    display: inline-block;
+
+}
+*/
+.LesPlus{
+    width: 30%;
+    height:100%;
+    background-color: rgb(204, 204, 204);
+    float:right;
+    margin-left:2px;
+    border-radius:1%;
+
+}
+
+
+.BoiteArrondieLesPlus{
+    width:95%;
+    height:30%;
+    margin-left:1%;
+    border-radius:2%;
+
+    background-color: white;
+    box-shadow:5px 5px 10px rgb(129, 129, 129);
+    margin:1%;
+}
+
+.imageLesPlus{
+    width:50%;
+
+    padding:1%;
+
+    border-radius: 10px;
+}
+
+.imageLesPlus, .textBALesPlus{
+    display : inline-block;
+}
+
+
+.BoiteArrondie{
+    height: 40%;
+    width: 30%;
+    margin: 0.5%;
+    border-radius: 10px;
+    background-color: white;
+    padding:0.25%;
+    box-shadow:5px 5px 10px rgb(129, 129, 129);
+
+}
+
+.BoiteArrondie2{
+    height: auto;
+    width: 200px;
+    margin: 1%;    
+    border : 1px solid black;
+    border-radius: 20px;
+    padding: 0%;
+}
+
+.BoiteArrondie2:hover{
+    background-color:rgb(53, 207, 200)
+}
+
+#logo{
+    width: 77px;
+    height:36px;
+}
+
+#hébergement:hover,#Activités:hover {
+    background-color : rgb(53, 207, 200);
+}
+
+.BoiteAweso{
+    display: flex;
+    align-items: flex-start;
+
+}
+
+#BA1, #BA2, #BA3{
+    display : inline-block;
+    width:30%;
+}
+
+.fa-circle, .fa-star {
+    color: rgb(0, 183, 255);
+  }
+.fa-heart, .fa-money-bill-wave-alt, .fa-child{
+    color:blue;
+}
+.fa-chart-line{
+    float:right;
+    position:relative;
+    bottom:45px; right:20px
+
+}
+
+@media screen and (max-width:780px){
+/*
+    #Header{
+        margin: 0;
+        background: #7197d9;
+        max-width: 65rem;
+    }
+*/
+
+    #I1,#I2,#I3{
+        display:block;
+        width: auto;
+    }
+    .info{
+        display:block;
+    }
+/*
+    .box2{
+        display: block;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+*/
+    .div4, .Heber{
+        height: auto;
+        width: auto;
+    }
+
+    .LesPlus, .Heber{
+        float:none;
+        height: auto;
+        width: auto;
+
+    }
+
+    #boxHeader{
+        display: block;
+
+    
+    }
+    
+    #hébergement, #Activités{
+        display: block;
+    }
+    
+    #hébergement{
+        border: cornsilk;
+        position: static;
+        width: 100px;
+        height: auto;
+
+    }
+    
+    #Activités{
+        border: cornsilk;
+        position: static;
+        width: 100px;
+        height: auto;
+
+    }
+
+    #Sinscrire{
+        border: cornsilk;
+        position: absolute;
+        top:0px; left:200px;
+
+        width: auto;
+        height: auto;
+
+    }
+
+    .BoiteAweso{
+        display: block;
+        
+    
+    }
+
+    .BoiteArrondie{
+        width:95%;
+        height:100%;
+
+    }
+
+    .image, .textBA{
+        display : inline-block;
+    }
+
+    #BA1, #BA2, #BA3{
+        display : block;
+        width:95%;
+        height:100%;
+    }
+    /*
+    .div2{
+        background-color: red;
+        margin:1%;
+        display:block;
+        width:100%
+    }
+    */
+    /*
+    .debug{
+        border:1px solid black
+    }
+    */
+
+}
