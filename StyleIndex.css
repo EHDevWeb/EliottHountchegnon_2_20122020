@@ -11,7 +11,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-
+    margin:0px;
+    padding:0px;
 }
 
 .ancre{
@@ -81,35 +82,22 @@ body{
     clear:both;
 }
 
-.image{
-    width:100%;
-    max-height:200px;
 
-    border-radius: 10px;
-}
 
-.box2{
+#Partie2{
     width:100%;
-    height:800px;
+
 
 }
 
-.Heber{
+#Heber{
     width: 65%;
     height:100%;
     background-color: rgb(204, 204, 204);
     padding: 0%;
     float:left;
-
 }
 
-
-/*
-.Heber, .div4{
-    display: inline-block;
-
-}
-*/
 .LesPlus{
     width: 30%;
     height:100%;
@@ -120,33 +108,47 @@ body{
 
 }
 
+#HeberAff{
+    padding-top:5%;
+    font-weight: bold;
+}
+
 
 .BoiteArrondieLesPlus{
     width:95%;
-    height:30%;
+
     margin-left:1%;
     border-radius:2%;
 
     background-color: white;
     box-shadow:5px 5px 10px rgb(129, 129, 129);
-    margin:1%;
+
+    display : inline-flex;
+    margin-bottom:2%;
 }
 
 .imageLesPlus{
-    width:50%;
+    width:90%;
 
-    padding:1%;
+    margin:2%;
 
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.imageLesPlus, .textBALesPlus{
-    display : inline-block;
+.divImageLesPlus {
+
+    width:45%;
+}
+.textBALesPlus{
+
+    width:55%;
+    margin:0px auto;
 }
 
 
 .BoiteArrondie{
-    height: 40%;
+
     width: 30%;
     margin: 0.5%;
     border-radius: 10px;
@@ -154,6 +156,12 @@ body{
     padding:0.25%;
     box-shadow:5px 5px 10px rgb(129, 129, 129);
 
+}
+
+.image{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .BoiteArrondie2{
@@ -231,6 +239,25 @@ body{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+/*
+.fa-info{
+    border:1px solid black;
+    width:20px;
+    height:20px;
+    border-radius:100%;
+
+
+}
+*/
+.fa-info{
+    border:1px solid black;
+    width:20px;
+    height:20px;
+    border-radius:100px;
+    padding: 0.5%;
+    color: blue;
+}
+
 @media screen and (max-width:780px){
 /*
     #Header{
@@ -247,19 +274,10 @@ body{
     .info{
         display:block;
     }
-/*
-    .box2{
-        display: block;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-*/
-    .div4, .Heber{
-        height: auto;
-        width: auto;
-    }
 
-    .LesPlus, .Heber, .info, #ancreA{
+
+
+    .LesPlus, #Heber, .info, #ancreA{
         float:none;
         height: auto;
         width: 100%;
@@ -330,6 +348,8 @@ body{
         height:100%;
     }
 
+    
+
     #Header{
         position: absolute;
         top:0px
@@ -338,7 +358,7 @@ body{
         position:absolute;
         top:180px
     }
-    .box2{
+    #Partie2{
         position: absolute;
         top:600px;
         max-width:95%;
