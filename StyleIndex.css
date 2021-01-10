@@ -1,21 +1,15 @@
 
-#Header{
-    max-width:60%;
-}
 
-#boxHeader{
-    display: flex;
-    align-items: flex-start; 
-    justify-content: space-between;
-}
+
 
 #SearchB{
 
     width:auto;
     height:30px;
     padding:0;
-    margin-bottom: 2%;
-    margin-left:2%;
+    margin-bottom: 7px;
+    margin-left:7px;
+    box-shadow: none;
 }
 /*
 #maRecherche{
@@ -33,12 +27,17 @@
     padding:0;
     margin:0;
     font-size: 1em;
-    height:40px
+    height:40px;
+    position:relative;
+    right:12px;
+
 }
 
 input{
     width:200px;
     height:40px;
+    position:relative;
+    right:5px;
 }
 
 .fa-map-marker-alt{
@@ -56,7 +55,7 @@ input{
 body{
     font-family: 'Raleway', sans-serif;
     margin:0px;
-    padding:0px;
+    padding-left:10px;
 }
 
 .ancre{
@@ -67,34 +66,35 @@ body{
     color:blue;
 }
 
-#hébergement, #Activités, #Sinscrire{
+#boxHeader{
     display: flex;
-    align-items: flex-start;    
-    justify-content: space-between;
-    position: relative;
-    left: 50%;
+    align-items: flex-start; 
+    justify-content:space-between;
 }
 
-#hébergement{
-    border: cornsilk;
-    width: auto;
-    height: auto;
-    margin-right:1%;
+
+#menu{
+    display: flex;
+    align-items: flex-start; 
+    justify-content: left;
+    border:1px solid black;
+
 }
 
-#Activités{
-    border: cornsilk;
-    width: auto;
-    height: auto;
-    margin-right:1%;
+#hébergement, #Activités, #Sinscrire{
+    margin:5px;
+
+
+
+}
+#hébergement:hover,#Activités:hover {
+    color : rgb(53, 207, 200);
+    border-top:1px solid rgb(53, 207, 200);
 }
 
-#Sinscrire{
-    border: cornsilk;
-    width: auto;
-    height: auto;
-    color:rgb(53, 94, 207)
-}
+
+
+
 
 
 
@@ -252,10 +252,6 @@ body{
     height:36px;
 }
 
-#hébergement:hover,#Activités:hover {
-    color : rgb(53, 207, 200);
-    border-bottom:1px solid rgb(53, 207, 200);
-}
 
 
 .BoiteAweso{
@@ -350,14 +346,15 @@ h2{
 }
 
 @media screen and (max-width:780px){
-/*
-    #Header{
-        margin: 0;
-        background: #7197d9;
-        max-width: 65rem;
-    }
-*/
 
+
+
+
+
+    body{
+        padding:0;
+        margin:0;
+    }
     #I1,#I2,#I3{
         display:block;
         width: auto;
@@ -373,8 +370,8 @@ h2{
         height: auto;
         width: 100%;
         clear:both;
-        padding: 0%;
-        margin: 0%;
+        padding: 0;
+        margin: 0;
     }
 
 
@@ -421,6 +418,7 @@ h2{
 
     .BoiteAweso{
         display: block;
+        margin-top:7px;
         
     
     }
