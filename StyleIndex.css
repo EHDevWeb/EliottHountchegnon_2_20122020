@@ -203,17 +203,47 @@ body{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
+/*
+.BoxAweAli{
+    
+}
+*/
+/*
 .BoiteArrondie2{
-    height: auto;
-    width: 200px;
-    margin: 1%;    
+    height: 30px;
+    width: 180px;
+    margin-left: 1%;
     border : 1px solid black;
-    border-radius: 20px;
-    padding: 0%;
+    border-top-width: 1px;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    position: relative;
+    right:2px;
+}
+*/
+
+.BoiteFiltres{
+    height: 25px;
+    width: auto;
+
+    border : 1px solid #deebff;
+    border-left: none;
+    display: inline-block;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position:relative;
+    right:15px;
+    text-align: center;
+    padding-top:5px;
+    padding-left:11px;
+    padding-right:5px;
 }
 
-.BoiteArrondie2:hover{
+
+
+.BoiteFiltres:hover{
     background-color:rgb(53, 207, 200)
 }
 
@@ -239,11 +269,19 @@ body{
     width:30%;
 }
 
-.fa-circle, .fa-star {
+
+.fa-star {
     color: rgb(0, 183, 255);
-  }
-.fa-heart, .fa-money-bill-wave-alt, .fa-child{
-    color:blue;
+}
+
+.fa-circle{
+    color: #deebff;
+    
+}
+
+
+.fa-heart, .fa-money-bill-wave-alt, .fa-child, .fa-dog{
+    color:#0065fc;
 }
 
 
@@ -303,11 +341,12 @@ h2{
 */
 .fa-info{
 
-    width:20px;
-    height:20px;
-    border-radius:100px;
-    margin: 1%;
+    width:3%;
+    height:100%;
+    border-radius:25px;
+    color:#0065fc;
     background-color: white;
+    border:1px solid black
 }
 
 @media screen and (max-width:780px){
@@ -426,16 +465,28 @@ h2{
     }
     .Partie1{
         position:absolute;
-        top:180px
+        top:100px
     }
+
+    #Heber{
+        position:absolute;
+        top:1400px;
+    }
+
+    .LesPlus{
+        position: absolute;
+        top: 600px;
+    }
+/*
     #Partie2{
         position: absolute;
         top:680px;
         max-width:95%;
     }
+*/
     .Partie3{
         position:absolute;
-        top:4000px;
+        top:3700px;
     }
 
     /*
