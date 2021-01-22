@@ -176,6 +176,7 @@ input{
     height: 160px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    padding:1.5%;
 }
 
 .txtDivLP{
