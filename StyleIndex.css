@@ -5,8 +5,8 @@ body{
 }
 
 p{
-    padding:none;
-    margin:none;
+    padding:0;
+    margin:0;
 }
 
 a{
@@ -35,7 +35,7 @@ img{
     padding-right:3%;
 }
 
-#hébergement, #Activités, #Sinscrire{
+#hebergement, #Activites, #Sinscrire{
     margin:5px;
     margin-top:1px;
     padding-top:5px;
@@ -50,7 +50,7 @@ img{
 #LSi{
     color:#0065fc;
 }
-#hébergement:hover,#Activités:hover {
+#hebergement:hover,#Activites:hover {
     color : rgb(53, 207, 200);
     border-top:1px solid rgb(53, 207, 200);
 
@@ -166,23 +166,41 @@ input{
     border-radius: 20px;
     width:90%;
     margin-bottom: 2%;
-    display : inline-flex;
+
     background-color: white;
     box-shadow:5px 5px 10px rgb(129, 129, 129);
-}
 
+}
+.LinkBLP{
+    display : inline-flex;
+    width:100%;
+}
 .ImgLP{
+
     width:50%;
     height: 160px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding:1.5%;
+    padding:1%;
+    padding-bottom: 0;
 }
 
 .txtDivLP{
-    padding-top:1%;
-    padding-left:1%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+/*.ParLP{
+    padding-top: 5px;
+}
+.ParLP1{
+    padding-top: 10px;
+    padding-bottom:20px;
+}
+.ParLP2{
+    padding-bottom: 15px;
+}*/
+
 .bold{
     font-weight: bold;
 }
@@ -208,9 +226,9 @@ input{
     justify-content: space-between;
 }
 
-.block{
+/*.block{
     display: block;
-}
+}*/
 
 .DivH{
     border-radius: 20px;
@@ -377,11 +395,11 @@ input{
         width:100%;
         display: grid;
         grid-template-columns: repeat(10,1fr);
-        grid-gap:1px;
+        grid-gap:0px;
         grid-auto-rows: minmax(100px, auto);
     }
     #P1{
-        padding-left:3%;
+        padding-left:2%;
     }
     #SearchB{
         width:280px;
@@ -397,14 +415,13 @@ input{
         color:white;
         border-radius: 10px;
         height:37px;
-
         margin-left:0;
         padding-bottom:2px;
         box-shadow:none;
         border:none;
     }
 
-    #hébergement{
+    #hebergement{
     grid-row: 2/3;
     grid-column: 1/5;
 
@@ -414,22 +431,34 @@ input{
         grid-column:10/11;
     }
 
-    #Activités{
+    #Activites{
         grid-row: 2/3;
         grid-column:6/11;
     }
-    #Activités,#hébergement{
+    #Activites{
         font-size: 4vw;
         justify-self: center;
 
         border-bottom:1px solid #f2f2f2;
-        padding:0 10vw 2vw 10vw;
+        padding:0 9vw 2vw 9vw;
+    }
+    #hebergement{
+        font-size: 4vw;
+        justify-self: center;
+
+        border-bottom:1px solid #f2f2f2;
+        padding:0 7vw 2vw 7vw;
     }
 
-    #hébergement:hover,#Activités:hover {
+    #hebergement:hover{
         color : rgb(53, 207, 200);
         border-top:1px solid white;
-        border-bottom:1vw solid rgb(53, 207, 200);
+        border-bottom:0.5vw solid rgb(53, 207, 200);
+    }
+    #Activites:hover{
+        color : rgb(53, 207, 200);
+        border-top:1px solid white;
+        border-bottom:0.5vw solid rgb(53, 207, 200);
     }
         #Filtres{
         display: flex;
@@ -452,7 +481,7 @@ input{
     }
 
     #LesPlus{
-        width:95%;
+        width:98%;
         justify-content:center;
     }
     
@@ -460,12 +489,12 @@ input{
 
         border-radius: 20px;
         width:96%;
-        height:170px;
+        height:auto;
     }
     
     .ImgLP{
         width:40%;
-        height: 170px;
+        height: 168px;
     }
     
     #ParaHeber{
@@ -474,7 +503,7 @@ input{
     }
 
     #Heber{
-        width:92%;
+        width:95%;
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -492,7 +521,7 @@ input{
     }
 
     #P3{
-        width:92%;
+        width:95%;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
@@ -525,6 +554,7 @@ input{
     }
     #I1,#I2,#I3{
         padding-left:3%;
+        padding-top:2%;
     }
     #ancreA{
         padding-left:2%;
