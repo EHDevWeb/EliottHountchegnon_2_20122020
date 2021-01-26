@@ -159,7 +159,16 @@ input{
     background-color: #f2f2f2;
     border-radius: 20px;
 }
+#ChartF{
+    display:flex;
+    justify-content: space-between;
 
+}
+.fa-chart-line{
+
+    padding:28px 25px 0 0px;
+    margin:0;
+}
 .DivLP{
     border-radius: 20px;
     width:90%;
