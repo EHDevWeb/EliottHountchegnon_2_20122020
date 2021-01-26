@@ -16,13 +16,6 @@ a{
 img{
     object-fit: cover;
 }
-
-#boxHeader{
-    display: flex;
-    align-items: flex-start; 
-    justify-content:space-between;
-}
-
 #logo{
     width: 101px;
     height:47px;
@@ -32,9 +25,14 @@ img{
     display: flex;
     align-items: flex-start; 
     justify-content: left;
-    padding-right:3%;
+    justify-content:space-between;
 }
-
+#TroisB{
+    display: flex;
+    align-items: flex-start; 
+    justify-content: left;
+    justify-content:space-between;
+}
 #hebergement, #Activites, #Sinscrire{
     margin:5px;
     margin-top:1px;
@@ -381,9 +379,11 @@ input{
     #menu{
         width:100%;
         display: grid;
-        grid-template-columns: repeat(10,1fr);
+        grid-template-columns: repeat(1,2fr);
         grid-gap:0px;
-        grid-auto-rows: minmax(100px, auto);
+        grid-auto-rows: minmax(80px, auto);
+        padding-bottom: 0;
+
     }
     #P1{
         padding-left:2%;
@@ -407,34 +407,50 @@ input{
         box-shadow:none;
         border:none;
     }
+    #TroisB{
+        grid-row: 2/3;
+        grid-column: 0/1;
+        width:100%;
 
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-gap:0px;
+        grid-auto-rows: minmax(80px, auto);
+    }
     #hebergement{
     grid-row: 2/3;
-    grid-column: 1/5;
+    grid-column: 1/6;
+    width:100%;
 
+    text-align: center;
     }
     #Sinscrire{
-        grid-row: 1/2;
+        grid-row: 0/1;
         grid-column:10/11;
+        position: relative;
+        top:-80px;
     }
 
     #Activites{
         grid-row: 2/3;
-        grid-column:6/11;
+        grid-column:6/12;
+
+        width:100%;
+        text-align: center;
     }
     #Activites{
         font-size: 4vw;
         justify-self: center;
 
         border-bottom:1px solid #f2f2f2;
-        padding:0 9vw 2vw 9vw;
+
     }
     #hebergement{
         font-size: 4vw;
         justify-self: center;
 
         border-bottom:1px solid #f2f2f2;
-        padding:0 7vw 2vw 7vw;
+
     }
 
     #hebergement:hover{
